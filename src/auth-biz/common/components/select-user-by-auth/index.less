@@ -1,0 +1,43 @@
+// 单选框禁用样式修改
+.msgbutton .ant-radio-disabled .ant-radio-inner::after{
+    background-color: #ff900d;
+}
+.msgbutton .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #ff900d!important;
+}
+// tabs样式修改
+.role-choose{
+    // height: 75vh;
+    // overflow-y: auto;
+    .ant-tabs-nav{
+        width: 100%;
+    }
+    .ant-tree{
+        height: 56vh;
+        overflow-y: auto;
+    }
+    .ant-tabs-tab{
+        box-sizing: border-box;
+        width: 50%;
+        text-align: center;
+    }
+}
+
+.puc-table-box{
+    margin-left: 48px;
+    .puc-table-box-title{
+        display: flex;
+        text-align: right;
+        flex: 8;
+        margin-bottom: 12px;
+        .box-title-d1{
+            flex: 4;
+        }
+        .box-title-d2{
+            flex: 4;
+        }
+    }
+    .ant-table-fixed{
+        background: none!important;
+    }
+}

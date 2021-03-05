@@ -1,0 +1,81 @@
+@component-background: #1b2441;
+@text-color: #ffffff;
+@background-color-base: #495474;
+@disabled-color: fade(@text-color, 65%);
+@border-color-split: #6B7286;
+@label-color: #ffffff;
+@tree-node-selected-bg: #24376c;
+@table-expanded-row-bg: #1b2441;
+
+// .layoutColumns .side {
+//   width: 310px;
+// }
+
+.contanier {
+  margin-top: 8px;
+  height: calc(100% - 8px);
+}
+
+.treeExpand {
+  padding: 2px;
+  position: relative;
+  border-bottom: 1px solid #444e69;
+  height: 30px;
+  top: 0px;
+  top: 5px;
+  padding-left: 11px;
+  cursor: pointer;
+
+  span {
+    display: inline-block;
+    vertical-align: 0px;
+    margin-right: 4px;
+  }
+
+  &:hover {
+
+    .anticon {
+      color: #07d3ff;
+    }
+  }
+
+  .button-link {
+    position: absolute;
+    right: 0px;
+    top: -4px;
+  }
+}
+
+.leftRree {
+  height: calc(100% - 20px);
+  overflow-y: scroll;
+  overflow-X: hidden;
+  padding-top: 10px;
+}
+
+.tree-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 125px;
+  display: inline-block;
+}
+
+.tree-node-tools {
+  display: table-caption;
+}
+
+.table-title {
+  background-color: var(--component-background, @component-background);
+  padding: 6px;
+}
+
+.group-move-button {
+  margin-top: 225px;
+  padding-left: 3px;
+
+  .ant-btn-icon-only {
+    margin-bottom: 20px;
+    min-width: 88px;
+
+  }
+}

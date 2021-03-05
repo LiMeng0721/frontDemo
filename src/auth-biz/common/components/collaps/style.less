@@ -1,0 +1,36 @@
+.dropDownInfo {
+  .infoHeader {
+    .infoHeaderContanier {
+      display: inline-block;
+      cursor: pointer;
+
+      .infoHeaderTitle,
+      .anticon {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 6px;
+
+      }
+
+      .infoHeaderTitle {
+        position: relative;
+
+        &::before {
+          content: "";
+          width: 4px;
+          height: 15px;
+          background: #6B7286;
+          display: inline-block;
+          position: relative;
+          top: 3px;
+          margin-right: 4px;
+        }
+      }
+      .infoHeaderDesc{
+        font-size: 13px;
+      }
+    }
+  }
+
+  .infoContanier {}
+}
